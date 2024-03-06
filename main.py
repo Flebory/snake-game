@@ -11,13 +11,14 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-#fill the screen with a color to wipe away anything from last frame
-screen.fill("black")
+    #fill the screen with a color to wipe away anything from last frame
+    screen.fill("black")
 
+    #flip() the display to put your work on screen
+    pygame.display.flip()
 
-#flip() the display to put your work on screen
-pygame.display.flip()
+    #limits fps to 60
+    clock.tick(60)
 
-#limits fps to 60
-clock.tick(60)
+pygame.quit()
         
